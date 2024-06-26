@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sdpadmin/Desktop/repos/RazorPagesApp/RazorPagesApp.csproj": {}
+    "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/RazorPagesApp.csproj": {}
   },
   "projects": {
-    "/Users/sdpadmin/Desktop/repos/RazorPagesApp/RazorPagesApp.csproj": {
+    "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/RazorPagesApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sdpadmin/Desktop/repos/RazorPagesApp/RazorPagesApp.csproj",
+        "projectUniqueName": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/RazorPagesApp.csproj",
         "projectName": "RazorPagesApp",
-        "projectPath": "/Users/sdpadmin/Desktop/repos/RazorPagesApp/RazorPagesApp.csproj",
+        "projectPath": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/RazorPagesApp.csproj",
         "packagesPath": "/Users/sdpadmin/.nuget/packages/",
-        "outputPath": "/Users/sdpadmin/Desktop/repos/RazorPagesApp/obj/",
+        "outputPath": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sdpadmin/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,12 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.6, )"
