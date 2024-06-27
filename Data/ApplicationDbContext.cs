@@ -1,8 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using RazorPagesApp.Models;
 
-public class AppDbContext : DbContext
+namespace RazorPagesApp.Data
 {
-    public DbSet<Item> Items { get; set; }
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }
 
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public DbSet<Item> Items { get; set; }
+    }
 }

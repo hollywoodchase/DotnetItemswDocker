@@ -30,8 +30,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/Pages/Items.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbXMuY3NodG1s
+[/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/Pages/Items/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/Pages/Items/Items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbXMvSXRlbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/Pages/Privacy.cshtml]
