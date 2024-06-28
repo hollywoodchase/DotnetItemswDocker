@@ -6,9 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-// Register ApplicationDbContext with dependency injection
+// Register the ApplicationDbContext with the connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add session services
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -23,6 +26,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// Use session
+app.UseSession();
 
 app.UseAuthorization();
 

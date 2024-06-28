@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/RazorPagesApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/wwwroot/css/custom.css",
+      "PackagePath": "staticwebassets/css/custom.css"
+    },
+    {
       "Id": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

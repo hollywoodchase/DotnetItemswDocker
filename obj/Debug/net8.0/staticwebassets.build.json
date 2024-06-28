@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TwVKpHlbU2o46dRUTOKclDG3eml6D1VKa1KLkb/U4ic=",
+  "Hash": "HYADJut+rMrrI/BwUOClLbGr3YxO1njUPIUmQ1JTa6w=",
   "Source": "RazorPagesApp",
   "BasePath": "_content/RazorPagesApp",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/obj/Debug/net8.0/scopedcss/projectbundle/RazorPagesApp.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/wwwroot/css/custom.css",
+      "SourceId": "RazorPagesApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/wwwroot/",
+      "BasePath": "_content/RazorPagesApp",
+      "RelativePath": "css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/custom.css"
     },
     {
       "Identity": "/Users/sdpadmin/Desktop/repos/DotnetItemswDocker/wwwroot/css/site.css",

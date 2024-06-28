@@ -1,19 +1,24 @@
 @page
-@model RazorPagesApp.Pages.ItemsModel
+@model RazorPagesApp.Pages.Items.ItemsModel
 @{
     ViewData["Title"] = "Items";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <h2>Items</h2>
 
 <form method="post">
-    <input type="text" name="NewItem" />
+    <input type="text" name="NewItem" asp-for="NewItem" />
     <button type="submit">Add Item</button>
 </form>
 
 <ul>
     @foreach (var item in Model.Items)
     {
-        <li>@item</li>
+        <li>@item.Name</li>
     }
 </ul>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -18,7 +18,8 @@ namespace RazorPagesApp.Pages.Items
         }
 
         [BindProperty]
-        public string ItemName { get; set; }
+        public Item NewItem { get; set; }
+
         public IList<Item> Items { get; set; }
 
         public async Task OnGetAsync()
@@ -28,12 +29,13 @@ namespace RazorPagesApp.Pages.Items
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!string.IsNullOrEmpty(ItemName))
+            if (!ModelState.IsValid)
             {
-                var newItem = new Item { Name = ItemName };
-                _context.Items.Add(newItem);
-                await _context.SaveChangesAsync();
+                return Page();
             }
+
+            _context.Items.Add(NewItem);
+            await _context.SaveChangesAsync();
 
             return RedirectToPage();
         }

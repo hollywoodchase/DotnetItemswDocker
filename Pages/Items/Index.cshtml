@@ -4,11 +4,11 @@
     ViewData["Title"] = "Items";
 }
 
-<h1>Items</h1>
+<h2>Items</h2>
 
 <form method="post">
-    <input type="text" asp-for="ItemName" placeholder="Add new item" />
-    <button type="submit">Add</button>
+    <input type="text" asp-for="NewItem.Name" placeholder="Add new item" />
+    <button type="submit">Add Item</button>
 </form>
 
 <ul>
@@ -17,3 +17,7 @@
         <li>@item.Name</li>
     }
 </ul>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
