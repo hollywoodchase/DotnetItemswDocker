@@ -1,3 +1,4 @@
+// Data/ApplicationDbContext.cs
 using Microsoft.EntityFrameworkCore;
 using RazorPagesApp.Models;
 
@@ -11,5 +12,6 @@ namespace RazorPagesApp.Data
         }
 
         public DbSet<Item> Items { get; set; }
+        public DbSet<RazorPagesApp.Models.Task> Tasks { get; set; }
     }
 }

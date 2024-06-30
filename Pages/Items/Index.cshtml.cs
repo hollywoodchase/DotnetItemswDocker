@@ -1,3 +1,4 @@
+// Pages/Items/Index.cshtml.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -22,12 +23,12 @@ namespace RazorPagesApp.Pages.Items
 
         public IList<Item> Items { get; set; }
 
-        public async Task OnGetAsync()
+        public async System.Threading.Tasks.Task OnGetAsync()
         {
             Items = await _context.Items.ToListAsync();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async System.Threading.Tasks.Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
