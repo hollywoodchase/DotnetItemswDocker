@@ -8,16 +8,31 @@
 <h2>Items</h2>
 
 <form method="post">
-    <input type="text" name="NewItem" asp-for="NewItem" />
-    <button type="submit">Add Item</button>
+    <div class="form-group">
+        <label asp-for="NewItem"></label>
+        <input class="form-control" type="text" asp-for="NewItem" />
+        <span asp-validation-for="NewItem" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Item</button>
 </form>
 
-<ul>
-    @foreach (var item in Model.Items)
-    {
-        <li>@item.Name</li>
-    }
-</ul>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Item #</th>
+            <th scope="col">Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.Id</td> <!-- Assuming 'Id' is the primary key of the Item model -->
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
