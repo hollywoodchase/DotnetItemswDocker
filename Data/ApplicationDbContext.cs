@@ -10,8 +10,7 @@ namespace RazorPagesApp.Data
             : base(options)
         {
         }
-
-        public DbSet<Item> Items { get; set; }
         public DbSet<RazorPagesApp.Models.Task> Tasks { get; set; }
+        public DbSet<Score> Scores { get; set; }
     }
 }
